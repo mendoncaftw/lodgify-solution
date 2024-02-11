@@ -1,0 +1,14 @@
+Please add the cURLs of your tests here:
+
+Including curl with and without escape "\", for Powershell for example.
+
+Create showtime
+curl 'https://localhost:7629/api/showtimes/new' --header 'Content-Type: application/json' --data '{\"movieId\": \"ID-test1\", \"sessionDate\": \"2023-11-19\", \"auditoriumId\": 1}'
+curl 'https://localhost:7629/api/showtimes/new' --header 'Content-Type: application/json' --data '{"movieId": "ID-test1", "sessionDate": "2023-11-19", "auditoriumId": 1}'
+
+Reserve seats
+curl 'https://localhost:7629/api/seats/reserve' --header 'Content-Type: application/json' --data '{\"showtimeId\": 2, \"numberOfSeats\": 2}'
+curl 'https://localhost:7629/api/seats/reserve' --header 'Content-Type: application/json' --data '{"showtimeId": 2, "numberOfSeats": 2}'
+
+Buy seats
+curl 'https://localhost:7629/api/seats/confirm-reservation?reservationId=991724cd-378a-4722-bbd6-539afdbdefe7' --data '{}'

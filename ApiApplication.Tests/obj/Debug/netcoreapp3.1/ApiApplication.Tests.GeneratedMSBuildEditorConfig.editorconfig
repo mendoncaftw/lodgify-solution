@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = ApiApplication.Tests
+build_property.ProjectDir = C:\Users\mendo\Desktop\Lodgify\ApiApplication.Tests\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
